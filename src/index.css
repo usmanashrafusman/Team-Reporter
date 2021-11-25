@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main
+{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(https://thestartupgen.com/wp-content/uploads/2019/10/team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main::before 
+{
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.main .panel{
+position: relative;
+height: 500px;
+width: 40%;
+background-color: #fff;
+box-shadow: 16px 0px 10px 0px #fff;
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.panel .wel{
+font-size: 27px;
+font-family: sans-serif;
+font-weight: 500;
+margin-top: 30px;
+margin-bottom: 15px;
+color: #000;
+}
+
+.panel input[type=email], .panel input[type=password] , .panel input[type=text]{
+border: none;
+outline: none;
+border-bottom: 2px solid #000;
+margin: 21px;
+width: 100%;
+text-align: center;
+
+}
+
+.panel input:focus{
+
+border-bottom: 2px solid #2a76d8;
+
+}
+.panel a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #2a76d8;
+  padding: 7px 17px;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+.panel a:hover{
+  background-color: #205fb1;
+}
+
+
+
+.main-panel{
+height: 70%;
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.panel input[type=button]{
+padding: 5px 20px;
+color: #fff;
+background: #2a76d8;
+outline: none;
+border: none;
+border-radius: 8px;
+letter-spacing: 1px;
+}
+.panel input[type=button]:hover{
+background: #1d5aaa;
+cursor: pointer;
+}
+
+.lower-panel{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+height: 20%;
+/* background:rgb(108, 207, 26); */
+}
+
+
+.info{
+  height: 250px;
+  display: flex;
+  background: #000000a6;
+}
+.info p {
+  color: #fff;
+}
+.image{
+  margin-left: 6px;
+  height: 100%;
+border-radius: 50%;
+border: 2px solid black;
+}
+.photo{
+  width: 20%;
+  height: 80%;
+  margin-right: 30px;
+  align-self: center;
+
+}
+.data{
+  align-self: center;
+  width: 60%;
+}
+.head{
+  font-family: sans-serif;
+font-size: 32px;
+font-weight: 600;
+color: #fff;
+}
+
+.compDesc{
+  font-size: 19px;
+font-style: italic;
+color: #888!important;
+} 
+.btns{
+  align-self: center;
+display: flex;
+}
+
+.btns input[type=button]{
+  cursor: pointer;
+}
+.btns #add , #logout , .more{
+  margin: 10px;
+  color: #fff;
+background: rgb(45, 102, 225);
+outline: none;
+border: none;
+padding: 10px 15px;
+margin-right: 15px;
+}
+.btns #add:hover{
+
+background: rgb(31, 94, 230);;
+
+}
+
+#logout{
+  background-color: #bb4146;
+}
+#logout:hover{
+  background-color: #b5282d;
+}
+
+.data p{
+margin-bottom: 15px;
+}
+
+.team{ 
+
+display: none;
+position: fixed;
+justify-content: center;
+align-items: center;
+flex-direction: column;    
+height: 100vh;
+width: 100%;
+
+}
+#teamPopUp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+width: 40%;
+background-color: #fff;
+padding: 10px;
+}
+#teamPopUp p {
+font-size: 22px;
+color: #3558de;
+}
+label {
+width: 100%;
+}
+.teamOp{
+width: 30%;
+}
+#teamPopUp div{
+display: flex;
+}
+
+input[type=text] , textarea , select {
+width: 75%;
+margin: 12px;
+}
+input[type=text] , select {
+padding: 15px 0px;
+}
+textarea{
+font-family: 'Times New Roman', Times, serif;
+}
+#addTeam , #close{
+      color: #fff;
+background: rgb(45, 102, 225);
+outline: none;
+border: none;
+padding: 10px 15px;
+margin-right: 15px;
+  }
+  #addTeam:hover{
+      cursor: pointer;   
+background: rgb(31, 94, 230);;
+
+  }
+
+  #close{
+      background-color: #bb4146;
+  }
+  #close:hover{
+      cursor: pointer;
+      background-color: #b5282d;
+  }
+
+  .own{
+    font-size: 24px;
+    text-align: center;
+    color: #0e0b01;
+    font-weight: 500;
+    margin-top: 15px;
+    font-family: sans-serif;
+  }
+  .ownTeams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ownTeams div{
+    margin: 15px 0px;
+    width: 90%;
+    padding: 20px;
+    border: 2px solid #888;
+   
+  }
+  .ownTeams div:hover{
+    cursor: pointer;
+    background: #fcfafa;
+  }
+  .ownTeams .name{
+    font-size: 19px;
+  }
+
+  .ownTeams p{
+    margin: 10px 0px;
+  }
+
+  .heading{    display: flex;
+    justify-content: space-around;
+    background: #3d6acf;
+    color: #fff;
+    height: 43px;
+    align-items: center;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+;}
+
+.heading2{    display: flex;
+ 
+  background: #3d6acf;
+  color: #fff;
+  height: 43px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  font-size: 17px;
+;}
+
+.heading2 > div{   
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 50%;
+  border: 1px solid #fff;
+
+  
+}
+
+table{
+  border: 1px solid #000;
+  border-collapse:collapse;
+  width: 100%;
+  text-align: center;
+}
+td{
+  border: 1px solid #000;
+}
+th{
+  border: 1px solid #000;
+}
+
+.edit{
+  border-radius: 25px;
+    padding: 10px 20px;
+    background: #3564cf;
+    border: 5px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.del{
+  border-radius: 25px;
+    padding: 10px 20px;
+    background: #8a371e;
+    border: 5px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.ask{
+  border-radius: 25px;
+    padding: 10px 20px;
+    background: #6a2672;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.addMem{
+  color: #fff;
+  background: rgb(45, 102, 225);
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  margin: 15px;
+}
+
+.qus{
+  font-family: sans-serif;
+    font-size: 24px;
+    color: #1c60f9;
+}
+
+.quesDiv{
+  position: fixed;
+  background: #fff;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  align-items: center;
+  top: 20%;
+  left: 10%;
+ 
+}
+.questionPOP{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0%;
+  display: none;
+}
+.close{border: 1px solid #fff;
+  font-size: 16px;
+  padding: 14px 18px;
+  border-radius: 50%;
+  background: #af2424;
+  color: #fff;
+  position: fixed;
+  left: 90%;
+  top: 10%;}
+
+.quesDiv > input[type="text"]{
+  border: none;
+  border-bottom: 1px solid #486acd;
+  outline: none;
+}
+
+.quesDiv > input[type="text"]:focus{
+  border: none;
+  border-bottom: 1px solid #3356c0;
+  outline: none;
+}

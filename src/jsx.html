@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main
+         {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            background-image: url(https://thestartupgen.com/wp-content/uploads/2019/10/team.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main::before 
+        {
+            position: absolute;
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+        }
+        .main .panel{
+            position: relative;
+            height: 500px;
+    width: 40%;
+    background-color: #fff;
+box-shadow: 16px 0px 10px 0px #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+        }
+
+.panel .wel{
+    font-size: 27px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #000;
+}
+       
+.panel input[type=text] , .panel input[type=password],.panel input[type=email]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    margin: 21px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.panel input[type=text]:focus , .panel input[type=password]:focus, .panel input[type=email]:focus{
+ 
+    border-bottom: 2px solid #2a76d8;
+
+}
+
+.main-panel{
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel input[type=button]{
+    padding: 5px 20px;
+    color: #fff;
+    background: #2a76d8;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+.panel input[type=button]:hover{
+    background: #1d5aaa;
+    cursor: pointer;
+}
+
+.lower-panel{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+height: 20%;
+/* background:rgb(108, 207, 26); */
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
