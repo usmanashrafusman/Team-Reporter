@@ -410,3 +410,90 @@ th{
   border-bottom: 1px solid #3356c0;
   outline: none;
 }
+
+td{
+  padding: 5px;
+}
+
+.btn {
+  border-radius: 25px;
+    padding: 6px 12px;
+    background: #90299d;
+    border: 3px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.tablePOP{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  top: 0;
+  background: #fff;
+  padding: 3% 6% 6% 6%
+}
+
+.teamTable{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* max-height: 100vh; */
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+}
+
+.tablePOP > p{
+  text-align: center;
+  font-size: 18px;
+  padding: 0% 0% 3% 0%;
+  color: #265edd;
+  font-weight: 600;
+}
+.details{
+  display: flex;
+  text-align: center;
+  padding: 10px 0px;
+  color: #fff;
+  background: #724f4f;
+  font-size: 16px;
+  border: 2px solid #fff;
+}
+
+.details > div {
+  width: 50%;
+}
+
+.quesHead{
+  font-size: 20px;
+    font-family: sans-serif;
+    color: #004eff;
+}
+
+.askQus {
+  display: flex;
+    align-items: center;
+    padding:15px;
+}
+
+.quesHead + p{
+  color: #000;
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.ansInput{
+  border: none;
+    border-bottom: 1px solid #486acd;
+    outline: none;
+    padding: 15px 20px;
+}
+
+.rev{
+  display: flex;
+    flex-direction: column-reverse;
+}

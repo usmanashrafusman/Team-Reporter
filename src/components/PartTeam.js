@@ -13,6 +13,15 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import CreateTeamForm from "./CreateTeamForm";
 import { Resolved } from "react-await";
 import Header from "./Header";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+}from "react-router-dom";
+import TeamInferface from "./TeamInferface"
+import { useParams } from "react-router-dom";
+
 
 let signInUser = JSON.parse(localStorage.getItem("Email"));
 
@@ -28,7 +37,9 @@ export default function CreatedTeams() {
       const unsubscribe = onSnapshot(q, (querySnapshot) => {
         const teams = [];
         querySnapshot.forEach((doc) => {
-          teams.push(doc.data());
+          let infoObj ={info:doc.data(),id:doc.id}
+          teams.push(infoObj);
+          console.log(teams)
         });
         allPartTeam(teams);
       });
@@ -39,19 +50,20 @@ export default function CreatedTeams() {
         <p className="own">Teams You're Part Of</p>
 
         {partTeam.map((e) => (
-          <div key={e.teamName}>
+          <div key={e.id}>
             <strong>
-              <p className="name">{e.teamName}</p>
+              <p className="name">{e.info.teamName}</p>
             </strong>
             <p>
-              Type :<strong>{e.teamCategory}</strong>{" "}
+              Type :<strong>{e.info.teamCategory}</strong>{" "}
             </p>
             <p>
               <strong>
                 <span>Members : </span>
               </strong>
-              {e.teamArr + ","}
+              {e.info.teamArr + ","}
             </p>
+            <Link style={{textDecoration:"none", padding:"5px 10px",backgroundColor:"#1b4cb9",color:"#fff"}} to={"Teams/"+e.id}>Open</Link>
           </div>
         ))}
       </div>

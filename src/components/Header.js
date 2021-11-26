@@ -54,7 +54,7 @@ export default function Header() {
               />
               <input type="button" value="Log Out" id="logout" />
             </div>
-          </div>  )}{" "}  
+          </div>  )} 
         </div>
     )
 }
